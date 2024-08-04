@@ -35,20 +35,18 @@ public class Clock extends JFrame implements ActionListener {
         // Adding labels to the panel in a specific order to represent a clock face
         panel.add(label[11]);
         panel.add(new JLabel("")); // Empty space
-        panel.add(label[0]);
+        panel.add(label[1]);
         panel.add(label[10]);
         panel.add(new JLabel("")); // Empty space
-        panel.add(label[1]);
+        panel.add(label[2]);
         panel.add(label[9]);
         panel.add(new JLabel("")); // Empty space
-        panel.add(label[2]);
-        panel.add(label[8]);
-        panel.add(label[7]);
         panel.add(label[3]);
-        panel.add(label[6]);
-        panel.add(new JLabel("")); // Empty space
+        panel.add(label[8]);
+        panel.add(new JLabel(""));
         panel.add(label[4]);
-        panel.add(new JLabel("")); // Empty space
+        panel.add(label[7]);
+        panel.add(label[6]); // Empty space
         panel.add(label[5]);
     }
     public static void main(String[] args) throws Exception {
