@@ -18,7 +18,7 @@ public class Clock extends JFrame implements ActionListener {
     }
     public void ClockFunction() {
         panel=new JPanel();
-        panel.setBounds(10,10,490,490);
+        panel.setBounds(10,10,480,480);
         panel.setBackground(Color.red);
         add(panel);
     }
