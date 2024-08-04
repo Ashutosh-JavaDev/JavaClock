@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 // import java.awt.GridLayout;
+import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -26,12 +27,12 @@ public class Clock extends JFrame implements ActionListener {
         add(panel);
      
         for (int i = 1; i < 12; i++) { // Adjust loop to run from 1 to 11 (11 iterations)
-            label[i] = new JLabel(String.valueOf(i));
+            label[i] = new JLabel(String.valueOf(i),SwingConstants.CENTER);
             label[i].setFont(font);
             label[i].setForeground(Color.white);
             label[i].setFocusable(false);
         }
-        label[0] = new JLabel("12");
+        label[0] = new JLabel("12",SwingConstants.CENTER);
         label[0].setFont(font);
         label[0].setForeground(Color.white);
         label[0].setFocusable(false);
