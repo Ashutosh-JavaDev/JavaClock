@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Font;
 public class Clock extends JFrame implements ActionListener {
-
+    JLabel[]label=new JLabel[12];
     Font font=new Font("Roboto",Font.BOLD,18);
     JPanel panel;
     public Clock(){
@@ -15,14 +15,15 @@ public class Clock extends JFrame implements ActionListener {
         setSize(500,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(250,200);
-        ClockFunction();
+        createPanel();
         setVisible(true);
     }
-    public void ClockFunction() {
+    public void createPanel() {
         panel=new JPanel();
         panel.setBounds(10,10,480,480);
         panel.setBackground(Color.red);
         add(panel);
+
     }
     public static void main(String[] args) throws Exception {
         new Clock();        
