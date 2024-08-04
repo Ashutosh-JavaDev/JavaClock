@@ -5,7 +5,12 @@ import java.awt.GridLayout;
 import java.awt.Font;
 public class Clock extends JFrame implements ActionListener {
     public Clock(){
-
+        setTitle("Digital Clock");
+        setLayout(null);
+        setSize(500,500);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocation(250,200);
+        setVisible(true);
     }
     public static void main(String[] args) throws Exception {
         new Clock();        
