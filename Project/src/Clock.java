@@ -25,7 +25,7 @@ public class Clock extends JFrame implements ActionListener {
         panel.setLayout(new GridLayout(5,3,50,50));
         add(panel);
      
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < 13; i++) {
             label[i] = new JLabel(String.valueOf(i));
             label[i].setFont(font);
             label[i].setForeground(Color.white);
@@ -34,7 +34,7 @@ public class Clock extends JFrame implements ActionListener {
 
         // Adding labels to the panel in a specific order to represent a clock face
         panel.add(label[11]);
-        panel.add(new JLabel("")); // Empty space
+        panel.add(label[12]); // Empty space
         panel.add(label[1]);
         panel.add(label[10]);
         panel.add(new JLabel("")); // Empty space
