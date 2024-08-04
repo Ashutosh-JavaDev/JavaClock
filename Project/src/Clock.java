@@ -25,6 +25,7 @@ public class Clock extends JFrame implements ActionListener {
         for(int i=0;i<12;i++){
             label[i]=new JLabel(String.valueOf(i));
             label[i].setFont(font);
+            label[i].setForeground(Color.white);
         }
     }
     public static void main(String[] args) throws Exception {
