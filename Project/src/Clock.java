@@ -33,6 +33,19 @@ public class Clock extends JFrame implements ActionListener {
         panel.add(label[11]);
         panel.add(label[12]);
         panel.add(label[1]);
+        panel.add(label[10]);
+        // panel.add(label[]);
+        panel.add(label[2]);
+        panel.add(label[9]);
+        // panel.add(label[12]);
+        panel.add(label[3]);
+        panel.add(label[8]);
+        // panel.add(label[12]);
+        panel.add(label[4]);
+        panel.add(label[7]);
+        panel.add(label[6]);
+        panel.add(label[5]);
+        
 
     }
     public static void main(String[] args) throws Exception {
