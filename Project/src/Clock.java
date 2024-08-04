@@ -1,9 +1,11 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JPanel;
 import java.awt.GridLayout;
 import java.awt.Font;
 public class Clock extends JFrame implements ActionListener {
+    JPanel panel;
     public Clock(){
         setTitle("Digital Clock");
         setLayout(null);
@@ -13,8 +15,8 @@ public class Clock extends JFrame implements ActionListener {
         ClockFunction();
         setVisible(true);
     }
-    public void ClockFunction(){
-
+    public void ClockFunction() {
+        panel=new JPanel();
     }
     public static void main(String[] args) throws Exception {
         new Clock();        
