@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JPanel;
 // import java.awt.GridLayout;
 import java.awt.Color;
 import java.awt.Font;
@@ -23,7 +22,10 @@ public class Clock extends JFrame implements ActionListener {
         panel.setBounds(10,10,480,480);
         panel.setBackground(Color.red);
         add(panel);
-
+        for(int i=0;i<12;i++){
+            label[i]=new JLabel(String.valueOf(i));
+            label[i].setFont(font);
+        }
     }
     public static void main(String[] args) throws Exception {
         new Clock();        
