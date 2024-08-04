@@ -21,19 +21,19 @@ public class Clock extends JFrame implements ActionListener {
     public void createPanel() {
         panel=new JPanel();
         panel.setBounds(10,10,360,380);
-        // panel.setBackground(Color.red);
+        panel.setBackground(Color.red);
         panel.setLayout(new GridLayout(5,3,150,60));
         add(panel);
      
         for (int i = 1; i < 12; i++) { // Adjust loop to run from 1 to 11 (11 iterations)
             label[i] = new JLabel(String.valueOf(i));
             label[i].setFont(font);
-            // label[i].setForeground(Color.white);
+            label[i].setForeground(Color.white);
             label[i].setFocusable(false);
         }
         label[0] = new JLabel("12");
         label[0].setFont(font);
-        // label[0].setForeground(Color.white);
+        label[0].setForeground(Color.white);
         label[0].setFocusable(false);
         // Adding labels to the panel in a specific order to represent a clock face
         panel.add(label[11]);
