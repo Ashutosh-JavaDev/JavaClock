@@ -2,10 +2,12 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JPanel;
-import java.awt.GridLayout;
+// import java.awt.GridLayout;
 import java.awt.Color;
 import java.awt.Font;
 public class Clock extends JFrame implements ActionListener {
+
+    Font font=new Font("Roboto",Font.BOLD,18);
     JPanel panel;
     public Clock(){
         setTitle("Digital Clock");
