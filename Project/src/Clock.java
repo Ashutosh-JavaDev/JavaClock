@@ -10,7 +10,11 @@ public class Clock extends JFrame implements ActionListener {
         setSize(500,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(250,200);
+        ClockFunction();
         setVisible(true);
+    }
+    public void ClockFunction(){
+
     }
     public static void main(String[] args) throws Exception {
         new Clock();        
