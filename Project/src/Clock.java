@@ -22,7 +22,7 @@ public class Clock extends JFrame implements ActionListener {
     public void createPanel() {
         panel=new JPanel();
         panel.setBounds(10,10,360,380);
-        panel.setBackground(Color.red);
+        // panel.setBackground(Color.red);
         panel.setLayout(new GridLayout(5,3,150,60));
         add(panel);
      
