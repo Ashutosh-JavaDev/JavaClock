@@ -52,6 +52,9 @@ public class Clock extends JFrame implements ActionListener {
         panel.add(label[6]); // Empty space
         panel.add(label[5]);
     }
+    public void ClockFunction(){
+        
+    }
     public static void main(String[] args) throws Exception {
         new Clock();        
     }
