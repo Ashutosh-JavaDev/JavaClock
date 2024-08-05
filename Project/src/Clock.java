@@ -7,6 +7,7 @@ import java.awt.Font;
 import java.awt.GridLayout;
 public class Clock extends JFrame implements ActionListener {
     JLabel[]label=new JLabel[12];
+    JLabel dot;
     Font font=new Font("Roboto",Font.BOLD,18);
     JPanel panel;
     public Clock(){
@@ -51,9 +52,10 @@ public class Clock extends JFrame implements ActionListener {
         panel.add(label[7]);
         panel.add(label[6]); // Empty space
         panel.add(label[5]);
+        dot=new  JLabel(".");
     }
     public void ClockFunction(){
-        
+
     }
     public static void main(String[] args) throws Exception {
         new Clock();        
