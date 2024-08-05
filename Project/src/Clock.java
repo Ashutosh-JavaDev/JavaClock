@@ -6,7 +6,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridLayout;
 public class Clock extends JFrame implements ActionListener {
-    JLabel[]label=new JLabel[12];
+    JLabel[]label=new JLabel[13];
     // JLabel dot;
     Font font=new Font("Roboto",Font.BOLD,18);
     JPanel panel;
@@ -26,7 +26,7 @@ public class Clock extends JFrame implements ActionListener {
         panel.setLayout(new GridLayout(5,3,150,60));
         add(panel);
      
-        for (int i = 1; i < 12; i++) { // Adjust loop to run from 1 to 11 (11 iterations)
+        for (int i = 1; i < 13; i++) { // Adjust loop to run from 1 to 11 (11 iterations)
             label[i] = new JLabel(String.valueOf(i));
             label[i].setFont(font);
             // label[i].setForeground(Color.white);
@@ -36,6 +36,10 @@ public class Clock extends JFrame implements ActionListener {
         label[0].setFont(font);
         // label[0].setForeground(Color.white);
         label[0].setFocusable(false);
+        label[12] = new JLabel(".");
+        label[12].setFont(new Font("Roboto",Font.BOLD,30));
+        // label[0].setForeground(Color.white);
+        label[12].setFocusable(false);
         // Adding labels to the panel in a specific order to represent a clock face
         panel.add(label[11]);
         panel.add(label[0]); // Empty space
@@ -44,7 +48,7 @@ public class Clock extends JFrame implements ActionListener {
         panel.add(new JLabel("")); // Empty space
         panel.add(label[2]);
         panel.add(label[9]);
-        panel.add(new JLabel(".")); // Empty space
+        panel.add(label[12]); // Empty space
         panel.add(label[3]);
         panel.add(label[8]);
         panel.add(new JLabel(""));
